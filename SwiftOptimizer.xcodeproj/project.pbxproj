@@ -1,0 +1,411 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7FD792FA197B24BB0038C709 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD792F9197B24BB0038C709 /* main.swift */; };
+		7FD7931E197B24E00038C709 /* machine_learning.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD79302197B24E00038C709 /* machine_learning.swift */; };
+		7FD7931F197B24E00038C709 /* math.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD79303197B24E00038C709 /* math.swift */; };
+		7FD79320197B24E00038C709 /* numbers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD79304197B24E00038C709 /* numbers.swift */; };
+		7FD79321197B24E00038C709 /* conversion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD79306197B24E00038C709 /* conversion.swift */; };
+		7FD79322197B24E00038C709 /* machine_learning.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7FD79307197B24E00038C709 /* machine_learning.mm */; };
+		7FD79323197B24E00038C709 /* math.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FD79308197B24E00038C709 /* math.m */; };
+		7FD79324197B24E00038C709 /* opencv.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7FD7930A197B24E00038C709 /* opencv.mm */; };
+		7FD79326197B24E00038C709 /* operations-and-indexing.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FD7930C197B24E00038C709 /* operations-and-indexing.m */; };
+		7FD79327197B24E00038C709 /* matrix.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD7930F197B24E00038C709 /* matrix.swift */; };
+		7FD79328197B24E00038C709 /* oneD-initing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD79310197B24E00038C709 /* oneD-initing.swift */; };
+		7FD79329197B24E00038C709 /* oneD-operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD79311197B24E00038C709 /* oneD-operators.swift */; };
+		7FD7932A197B24E00038C709 /* oneD-simple-math.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD79312197B24E00038C709 /* oneD-simple-math.swift */; };
+		7FD7932B197B24E00038C709 /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FD79313197B24E00038C709 /* opencv2.framework */; };
+		7FD7932C197B24E00038C709 /* ScalarArithmetic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD79316197B24E00038C709 /* ScalarArithmetic.swift */; };
+		7FD7932D197B24E00038C709 /* matrix2d.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD79319197B24E00038C709 /* matrix2d.swift */; };
+		7FD7932E197B24E00038C709 /* twoD-complex-math.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD7931A197B24E00038C709 /* twoD-complex-math.swift */; };
+		7FD7932F197B24E00038C709 /* twoD-initing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD7931B197B24E00038C709 /* twoD-initing.swift */; };
+		7FD79330197B24E00038C709 /* twoD-operators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD7931C197B24E00038C709 /* twoD-operators.swift */; };
+		7FD79331197B24E00038C709 /* twoD-simple-math.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD7931D197B24E00038C709 /* twoD-simple-math.swift */; };
+		7FD79333197B25AD0038C709 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FD79332197B25AD0038C709 /* Accelerate.framework */; };
+		7FD79337197B276C0038C709 /* CostFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD79336197B276C0038C709 /* CostFunction.swift */; };
+		7FD79339197B281B0038C709 /* Constraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD79338197B281B0038C709 /* Constraint.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		7FD792F4197B24BB0038C709 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		7FD792F6197B24BB0038C709 /* SwiftOptimizer */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SwiftOptimizer; sourceTree = BUILT_PRODUCTS_DIR; };
+		7FD792F9197B24BB0038C709 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		7FD79302197B24E00038C709 /* machine_learning.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = machine_learning.swift; sourceTree = "<group>"; };
+		7FD79303197B24E00038C709 /* math.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = math.swift; sourceTree = "<group>"; };
+		7FD79304197B24E00038C709 /* numbers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = numbers.swift; sourceTree = "<group>"; };
+		7FD79306197B24E00038C709 /* conversion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = conversion.swift; sourceTree = "<group>"; };
+		7FD79307197B24E00038C709 /* machine_learning.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = machine_learning.mm; sourceTree = "<group>"; };
+		7FD79308197B24E00038C709 /* math.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = math.m; sourceTree = "<group>"; };
+		7FD79309197B24E00038C709 /* OpenCV.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenCV.h; sourceTree = "<group>"; };
+		7FD7930A197B24E00038C709 /* opencv.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = opencv.mm; sourceTree = "<group>"; };
+		7FD7930B197B24E00038C709 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = opencv2.framework; sourceTree = "<group>"; };
+		7FD7930C197B24E00038C709 /* operations-and-indexing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "operations-and-indexing.m"; sourceTree = "<group>"; };
+		7FD7930D197B24E00038C709 /* swix-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "swix-Bridging-Header.h"; sourceTree = "<group>"; };
+		7FD7930F197B24E00038C709 /* matrix.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = matrix.swift; sourceTree = "<group>"; };
+		7FD79310197B24E00038C709 /* oneD-initing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "oneD-initing.swift"; sourceTree = "<group>"; };
+		7FD79311197B24E00038C709 /* oneD-operators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "oneD-operators.swift"; sourceTree = "<group>"; };
+		7FD79312197B24E00038C709 /* oneD-simple-math.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "oneD-simple-math.swift"; sourceTree = "<group>"; };
+		7FD79313197B24E00038C709 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = opencv2.framework; sourceTree = "<group>"; };
+		7FD79316197B24E00038C709 /* ScalarArithmetic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScalarArithmetic.swift; sourceTree = "<group>"; };
+		7FD79319197B24E00038C709 /* matrix2d.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = matrix2d.swift; sourceTree = "<group>"; };
+		7FD7931A197B24E00038C709 /* twoD-complex-math.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "twoD-complex-math.swift"; sourceTree = "<group>"; };
+		7FD7931B197B24E00038C709 /* twoD-initing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "twoD-initing.swift"; sourceTree = "<group>"; };
+		7FD7931C197B24E00038C709 /* twoD-operators.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "twoD-operators.swift"; sourceTree = "<group>"; };
+		7FD7931D197B24E00038C709 /* twoD-simple-math.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "twoD-simple-math.swift"; sourceTree = "<group>"; };
+		7FD79332197B25AD0038C709 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		7FD79336197B276C0038C709 /* CostFunction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CostFunction.swift; sourceTree = "<group>"; };
+		7FD79338197B281B0038C709 /* Constraint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constraint.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7FD792F3197B24BB0038C709 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7FD79333197B25AD0038C709 /* Accelerate.framework in Frameworks */,
+				7FD7932B197B24E00038C709 /* opencv2.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7FD792ED197B24BB0038C709 = {
+			isa = PBXGroup;
+			children = (
+				7FD79332197B25AD0038C709 /* Accelerate.framework */,
+				7FD79300197B24E00038C709 /* swix */,
+				7FD792F8197B24BB0038C709 /* SwiftOptimizer */,
+				7FD792F7197B24BB0038C709 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7FD792F7197B24BB0038C709 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7FD792F6197B24BB0038C709 /* SwiftOptimizer */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7FD792F8197B24BB0038C709 /* SwiftOptimizer */ = {
+			isa = PBXGroup;
+			children = (
+				7FD792F9197B24BB0038C709 /* main.swift */,
+				7FD79336197B276C0038C709 /* CostFunction.swift */,
+				7FD79338197B281B0038C709 /* Constraint.swift */,
+			);
+			path = SwiftOptimizer;
+			sourceTree = "<group>";
+		};
+		7FD79300197B24E00038C709 /* swix */ = {
+			isa = PBXGroup;
+			children = (
+				7FD79301197B24E00038C709 /* machine_learning */,
+				7FD79303197B24E00038C709 /* math.swift */,
+				7FD79304197B24E00038C709 /* numbers.swift */,
+				7FD79305197B24E00038C709 /* objc */,
+				7FD7930E197B24E00038C709 /* oneD */,
+				7FD79313197B24E00038C709 /* opencv2.framework */,
+				7FD79314197B24E00038C709 /* ScalarArithmetic-1.1.1 */,
+				7FD79317197B24E00038C709 /* swift-complex */,
+				7FD79318197B24E00038C709 /* twoD */,
+			);
+			path = swix;
+			sourceTree = "<group>";
+		};
+		7FD79301197B24E00038C709 /* machine_learning */ = {
+			isa = PBXGroup;
+			children = (
+				7FD79302197B24E00038C709 /* machine_learning.swift */,
+			);
+			path = machine_learning;
+			sourceTree = "<group>";
+		};
+		7FD79305197B24E00038C709 /* objc */ = {
+			isa = PBXGroup;
+			children = (
+				7FD79306197B24E00038C709 /* conversion.swift */,
+				7FD79307197B24E00038C709 /* machine_learning.mm */,
+				7FD79308197B24E00038C709 /* math.m */,
+				7FD79309197B24E00038C709 /* OpenCV.h */,
+				7FD7930A197B24E00038C709 /* opencv.mm */,
+				7FD7930B197B24E00038C709 /* opencv2.framework */,
+				7FD7930C197B24E00038C709 /* operations-and-indexing.m */,
+				7FD7930D197B24E00038C709 /* swix-Bridging-Header.h */,
+			);
+			path = objc;
+			sourceTree = "<group>";
+		};
+		7FD7930E197B24E00038C709 /* oneD */ = {
+			isa = PBXGroup;
+			children = (
+				7FD7930F197B24E00038C709 /* matrix.swift */,
+				7FD79310197B24E00038C709 /* oneD-initing.swift */,
+				7FD79311197B24E00038C709 /* oneD-operators.swift */,
+				7FD79312197B24E00038C709 /* oneD-simple-math.swift */,
+			);
+			path = oneD;
+			sourceTree = "<group>";
+		};
+		7FD79314197B24E00038C709 /* ScalarArithmetic-1.1.1 */ = {
+			isa = PBXGroup;
+			children = (
+				7FD79315197B24E00038C709 /* ScalarArithmetic */,
+			);
+			path = "ScalarArithmetic-1.1.1";
+			sourceTree = "<group>";
+		};
+		7FD79315197B24E00038C709 /* ScalarArithmetic */ = {
+			isa = PBXGroup;
+			children = (
+				7FD79316197B24E00038C709 /* ScalarArithmetic.swift */,
+			);
+			path = ScalarArithmetic;
+			sourceTree = "<group>";
+		};
+		7FD79317197B24E00038C709 /* swift-complex */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "swift-complex";
+			sourceTree = "<group>";
+		};
+		7FD79318197B24E00038C709 /* twoD */ = {
+			isa = PBXGroup;
+			children = (
+				7FD79319197B24E00038C709 /* matrix2d.swift */,
+				7FD7931A197B24E00038C709 /* twoD-complex-math.swift */,
+				7FD7931B197B24E00038C709 /* twoD-initing.swift */,
+				7FD7931C197B24E00038C709 /* twoD-operators.swift */,
+				7FD7931D197B24E00038C709 /* twoD-simple-math.swift */,
+			);
+			path = twoD;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7FD792F5197B24BB0038C709 /* SwiftOptimizer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7FD792FD197B24BB0038C709 /* Build configuration list for PBXNativeTarget "SwiftOptimizer" */;
+			buildPhases = (
+				7FD792F2197B24BB0038C709 /* Sources */,
+				7FD792F3197B24BB0038C709 /* Frameworks */,
+				7FD792F4197B24BB0038C709 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftOptimizer;
+			productName = SwiftOptimizer;
+			productReference = 7FD792F6197B24BB0038C709 /* SwiftOptimizer */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7FD792EE197B24BB0038C709 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = SHFuse;
+				TargetAttributes = {
+					7FD792F5197B24BB0038C709 = {
+						CreatedOnToolsVersion = 6.0;
+					};
+				};
+			};
+			buildConfigurationList = 7FD792F1197B24BB0038C709 /* Build configuration list for PBXProject "SwiftOptimizer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7FD792ED197B24BB0038C709;
+			productRefGroup = 7FD792F7197B24BB0038C709 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7FD792F5197B24BB0038C709 /* SwiftOptimizer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7FD792F2197B24BB0038C709 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7FD79320197B24E00038C709 /* numbers.swift in Sources */,
+				7FD79329197B24E00038C709 /* oneD-operators.swift in Sources */,
+				7FD7932D197B24E00038C709 /* matrix2d.swift in Sources */,
+				7FD79321197B24E00038C709 /* conversion.swift in Sources */,
+				7FD79337197B276C0038C709 /* CostFunction.swift in Sources */,
+				7FD79327197B24E00038C709 /* matrix.swift in Sources */,
+				7FD7932F197B24E00038C709 /* twoD-initing.swift in Sources */,
+				7FD792FA197B24BB0038C709 /* main.swift in Sources */,
+				7FD79330197B24E00038C709 /* twoD-operators.swift in Sources */,
+				7FD79339197B281B0038C709 /* Constraint.swift in Sources */,
+				7FD7932C197B24E00038C709 /* ScalarArithmetic.swift in Sources */,
+				7FD79328197B24E00038C709 /* oneD-initing.swift in Sources */,
+				7FD79331197B24E00038C709 /* twoD-simple-math.swift in Sources */,
+				7FD7931F197B24E00038C709 /* math.swift in Sources */,
+				7FD79324197B24E00038C709 /* opencv.mm in Sources */,
+				7FD7932A197B24E00038C709 /* oneD-simple-math.swift in Sources */,
+				7FD7931E197B24E00038C709 /* machine_learning.swift in Sources */,
+				7FD7932E197B24E00038C709 /* twoD-complex-math.swift in Sources */,
+				7FD79323197B24E00038C709 /* math.m in Sources */,
+				7FD79326197B24E00038C709 /* operations-and-indexing.m in Sources */,
+				7FD79322197B24E00038C709 /* machine_learning.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		7FD792FB197B24BB0038C709 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7FD792FC197B24BB0038C709 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		7FD792FE197B24BB0038C709 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/swix/objc",
+					"$(PROJECT_DIR)/swix",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "swix/objc/swix-Bridging-Header.h";
+			};
+			name = Debug;
+		};
+		7FD792FF197B24BB0038C709 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/swix/objc",
+					"$(PROJECT_DIR)/swix",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "swix/objc/swix-Bridging-Header.h";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7FD792F1197B24BB0038C709 /* Build configuration list for PBXProject "SwiftOptimizer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7FD792FB197B24BB0038C709 /* Debug */,
+				7FD792FC197B24BB0038C709 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7FD792FD197B24BB0038C709 /* Build configuration list for PBXNativeTarget "SwiftOptimizer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7FD792FE197B24BB0038C709 /* Debug */,
+				7FD792FF197B24BB0038C709 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7FD792EE197B24BB0038C709 /* Project object */;
+}
