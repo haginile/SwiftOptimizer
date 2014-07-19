@@ -30,6 +30,8 @@
 		7FD79333197B25AD0038C709 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FD79332197B25AD0038C709 /* Accelerate.framework */; };
 		7FD79337197B276C0038C709 /* CostFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD79336197B276C0038C709 /* CostFunction.swift */; };
 		7FD79339197B281B0038C709 /* Constraint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD79338197B281B0038C709 /* Constraint.swift */; };
+		7FD7933B197B2F290038C709 /* Problem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD7933A197B2F290038C709 /* Problem.swift */; };
+		7FD7933D197B32CE0038C709 /* EndCriteria.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD7933C197B32CE0038C709 /* EndCriteria.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -72,6 +74,8 @@
 		7FD79332197B25AD0038C709 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
 		7FD79336197B276C0038C709 /* CostFunction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CostFunction.swift; sourceTree = "<group>"; };
 		7FD79338197B281B0038C709 /* Constraint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constraint.swift; sourceTree = "<group>"; };
+		7FD7933A197B2F290038C709 /* Problem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Problem.swift; sourceTree = "<group>"; };
+		7FD7933C197B32CE0038C709 /* EndCriteria.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EndCriteria.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +115,8 @@
 				7FD792F9197B24BB0038C709 /* main.swift */,
 				7FD79336197B276C0038C709 /* CostFunction.swift */,
 				7FD79338197B281B0038C709 /* Constraint.swift */,
+				7FD7933A197B2F290038C709 /* Problem.swift */,
+				7FD7933C197B32CE0038C709 /* EndCriteria.swift */,
 			);
 			path = SwiftOptimizer;
 			sourceTree = "<group>";
@@ -269,7 +275,9 @@
 				7FD7932C197B24E00038C709 /* ScalarArithmetic.swift in Sources */,
 				7FD79328197B24E00038C709 /* oneD-initing.swift in Sources */,
 				7FD79331197B24E00038C709 /* twoD-simple-math.swift in Sources */,
+				7FD7933B197B2F290038C709 /* Problem.swift in Sources */,
 				7FD7931F197B24E00038C709 /* math.swift in Sources */,
+				7FD7933D197B32CE0038C709 /* EndCriteria.swift in Sources */,
 				7FD79324197B24E00038C709 /* opencv.mm in Sources */,
 				7FD7932A197B24E00038C709 /* oneD-simple-math.swift in Sources */,
 				7FD7931E197B24E00038C709 /* machine_learning.swift in Sources */,

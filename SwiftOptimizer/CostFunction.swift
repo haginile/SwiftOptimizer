@@ -10,21 +10,38 @@ import Foundation
 
 class CostFunction {
     
-    init() {
-        
+    func finiteDifferenceEpsilon() -> Double {
+        return 1e-8
     }
     
-    func value(x : matrix) -> Double {
+    // must subclass
+    func value(parameters : matrix) -> Double {
         return 0
     }
     
-    func values(x : matrix) -> matrix {
-        return zeros(1)
+    // must subclass
+    func values(parameters : matrix) -> matrix {
+        return zeros(parameters.count)
     }
     
-    func gradient(grad : matrix, x : matrix) {
+    func gradient(inout grad : matrix, parameters : matrix) {
+        var eps = finiteDifferenceEpsilon()
+        var fp : Double, fm : Double
+        var xx = parameters
         
+        for i in 0..<(parameters.count) {
+            xx[i] += eps
+            fp = value(xx)
+            xx[i] -= eps
+            fm = value(xx)
+            grad[i] = 0.5 * (fp - fm) / eps
+            xx[i] = parameters[i]
+        }
     }
     
+    func valueAndGradient(inout grad : matrix, parameters : matrix) -> Double {
+        gradient(&grad, parameters : parameters)
+        return value(parameters)
+    }
     
 }
