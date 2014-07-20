@@ -41,8 +41,3 @@ var bfgsSolver = BFGS()
 var bfgsSolved = bfgsSolver.minimize(&problem2, endCriteria: myEndCriteria)
 println(problem2.currentValue)
 
-
-var problem3 = Problem(costFunction: myFunc, constraint: constraint, initialValue: initialValue)
-var conjSolver = ConjugateGradient()
-var conjSolved = conjSolver.minimize(&problem3, endCriteria: myEndCriteria)
-println(problem3.currentValue)
