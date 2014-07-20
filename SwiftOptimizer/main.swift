@@ -13,12 +13,6 @@ class RosenBrockFunction: CostFunction
     override func value(parameters: matrix) -> Double {
         return pow(1.0 - parameters[0], 2) + 100 * pow(parameters[1] - pow(parameters[0], 2), 2.0)
     }
-
-    override func values(parameters: matrix) -> matrix {
-        var res = zeros(1)
-        res[0] = value(parameters)
-        return res
-    }
 }
 
 var myEndCriteria = EndCriteria(maxIterations: 1000, maxStationaryStateIterations: 100, rootEpsilon: 1.0e-8, functionEpsilon: 1.0e-9, gradientNormEpsilon: 1.0e-5)
