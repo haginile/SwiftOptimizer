@@ -11,7 +11,7 @@ import Foundation
 class LineSearchBasedMethod : OptimizationMethod {
     var lineSearch : LineSearch
     
-    init(lineSearch : LineSearch) {
+    init(lineSearch : LineSearch = ArmijoLineSearch()) {
         self.lineSearch = lineSearch
     }
     
@@ -78,7 +78,7 @@ class LineSearchBasedMethod : OptimizationMethod {
                 problem.squaredNorm = lineSearch.lastGradientNorm2()
                 
                 // conjugate gradient search direction
-                direction = getUpdatedDirection(problem, gold2: gold2, gradient: prevGradient);
+                direction = getUpdatedDirection(&problem, gold2: gold2, gradient: prevGradient);
                 
                 sddiff = direction - lineSearch.searchDirection
                 lineSearch.searchDirection = direction
@@ -106,7 +106,7 @@ class LineSearchBasedMethod : OptimizationMethod {
         return ecType
     }
     
-    func getUpdatedDirection(problem : Problem, gold2 : Double, gradient : matrix) -> matrix {
+    func getUpdatedDirection(inout problem : Problem, gold2 : Double, gradient : matrix) -> matrix {
         return zeros(0)
     }
 }

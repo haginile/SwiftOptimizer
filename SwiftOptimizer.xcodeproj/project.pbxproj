@@ -10,6 +10,7 @@
 		7F201F2D197B579100C2C584 /* LineSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F201F2C197B579100C2C584 /* LineSearch.swift */; };
 		7F201F2F197B59B900C2C584 /* ArmijoLineSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F201F2E197B59B900C2C584 /* ArmijoLineSearch.swift */; };
 		7F201F31197B5D4100C2C584 /* LineSearchBasedMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F201F30197B5D4100C2C584 /* LineSearchBasedMethod.swift */; };
+		7F201F33197B609400C2C584 /* BFGS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F201F32197B609400C2C584 /* BFGS.swift */; };
 		7FD792FA197B24BB0038C709 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD792F9197B24BB0038C709 /* main.swift */; };
 		7FD7931E197B24E00038C709 /* machine_learning.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD79302197B24E00038C709 /* machine_learning.swift */; };
 		7FD7931F197B24E00038C709 /* math.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD79303197B24E00038C709 /* math.swift */; };
@@ -57,6 +58,7 @@
 		7F201F2C197B579100C2C584 /* LineSearch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LineSearch.swift; sourceTree = "<group>"; };
 		7F201F2E197B59B900C2C584 /* ArmijoLineSearch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArmijoLineSearch.swift; sourceTree = "<group>"; };
 		7F201F30197B5D4100C2C584 /* LineSearchBasedMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LineSearchBasedMethod.swift; sourceTree = "<group>"; };
+		7F201F32197B609400C2C584 /* BFGS.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BFGS.swift; sourceTree = "<group>"; };
 		7FD792F6197B24BB0038C709 /* SwiftOptimizer */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SwiftOptimizer; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FD792F9197B24BB0038C709 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		7FD79302197B24E00038C709 /* machine_learning.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = machine_learning.swift; sourceTree = "<group>"; };
@@ -137,6 +139,7 @@
 				7F201F2E197B59B900C2C584 /* ArmijoLineSearch.swift */,
 				7F201F30197B5D4100C2C584 /* LineSearchBasedMethod.swift */,
 				7FD79342197B386E0038C709 /* Simplex.swift */,
+				7F201F32197B609400C2C584 /* BFGS.swift */,
 				7FD79344197B3DED0038C709 /* swixExtension.swift */,
 			);
 			path = SwiftOptimizer;
@@ -296,6 +299,7 @@
 				7FD79330197B24E00038C709 /* twoD-operators.swift in Sources */,
 				7FD79339197B281B0038C709 /* Constraint.swift in Sources */,
 				7FD79341197B38380038C709 /* LeastSquare.swift in Sources */,
+				7F201F33197B609400C2C584 /* BFGS.swift in Sources */,
 				7FD79343197B386E0038C709 /* Simplex.swift in Sources */,
 				7FD7932C197B24E00038C709 /* ScalarArithmetic.swift in Sources */,
 				7FD79328197B24E00038C709 /* oneD-initing.swift in Sources */,

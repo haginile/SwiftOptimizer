@@ -35,3 +35,9 @@ var solver = Simplex(lambda: 0.1)
 var solved = solver.minimize(&problem, endCriteria: myEndCriteria)
 
 println(problem.currentValue)
+
+
+problem.reset()
+var bfgsSolver = BFGS()
+var bfgsSolved = bfgsSolver.minimize(&problem, endCriteria: myEndCriteria)
+println(problem.currentValue)
