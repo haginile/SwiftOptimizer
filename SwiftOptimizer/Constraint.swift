@@ -36,13 +36,12 @@ class Constraint {
         while !valid {
             assert(icount <= 200, "#Can't update parameter vector!")
             diff *= 0.5
-            icount += 1
+            icount++
             newParams = parameters + diff * direction
             valid = test(newParams)
         }
         
-        var adj = diff * direction
-        parameters = parameters + adj
+        parameters = parameters + diff * direction
         return diff
     }
 }

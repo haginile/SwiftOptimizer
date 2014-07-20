@@ -34,9 +34,9 @@ class Simplex : OptimizationMethod {
             pTry = sum_ * factor1 - vertices[iHighest] * factor2
             factor *= 0.5
         
-        } while (!problem.constraint.test(pTry) && abs(factor) > 1e-10)
+        } while (!problem.constraint.test(pTry) && abs(factor) > 1e-100)
         
-        if (abs(factor) <= 1e-10) {
+        if (abs(factor) <= 1e-100) {
             return values[iHighest]
         }
         
@@ -134,12 +134,12 @@ class Simplex : OptimizationMethod {
                 factor = 2.0;
                 extrapolate(problem, iHighest: iHighest, factor: &factor);
             }
-            else if (abs(factor) > 1e-10) {
+            else if (abs(factor) > 1e-100) {
                 if (vTry >= values[iNextHighest]) {
                     var vSave = values[iHighest];
                     factor = 0.5
                     vTry = extrapolate(problem, iHighest: iHighest, factor: &factor);
-                    if vTry >= vSave && abs(factor) > 1e-10 {
+                    if vTry >= vSave && abs(factor) > 1e-100 {
                         for i in 0...n {
                             if i != iLowest {
 
@@ -152,7 +152,7 @@ class Simplex : OptimizationMethod {
                 }
             }
             // If can't extrapolate given the constraints, exit
-            if abs(factor) <= 1e-10 {
+            if abs(factor) <= 1e-100 {
                 x_ = vertices[iLowest]
                 var low = values[iLowest]
                 problem.functionValue = low
@@ -161,10 +161,7 @@ class Simplex : OptimizationMethod {
             }
         } while (end == false)
         
-        println("optimization failed: unexpected behaviour")
     }
-    
-    
 }
 
 
