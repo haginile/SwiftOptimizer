@@ -35,6 +35,7 @@
 		7FD7933F197B37AB0038C709 /* Method.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD7933E197B37AB0038C709 /* Method.swift */; };
 		7FD79341197B38380038C709 /* LeastSquare.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD79340197B38380038C709 /* LeastSquare.swift */; };
 		7FD79343197B386E0038C709 /* Simplex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD79342197B386E0038C709 /* Simplex.swift */; };
+		7FD79345197B3DED0038C709 /* swixExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD79344197B3DED0038C709 /* swixExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -82,6 +83,7 @@
 		7FD7933E197B37AB0038C709 /* Method.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Method.swift; sourceTree = "<group>"; };
 		7FD79340197B38380038C709 /* LeastSquare.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeastSquare.swift; sourceTree = "<group>"; };
 		7FD79342197B386E0038C709 /* Simplex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Simplex.swift; sourceTree = "<group>"; };
+		7FD79344197B3DED0038C709 /* swixExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = swixExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +128,7 @@
 				7FD7933E197B37AB0038C709 /* Method.swift */,
 				7FD79340197B38380038C709 /* LeastSquare.swift */,
 				7FD79342197B386E0038C709 /* Simplex.swift */,
+				7FD79344197B3DED0038C709 /* swixExtension.swift */,
 			);
 			path = SwiftOptimizer;
 			sourceTree = "<group>";
@@ -286,6 +289,7 @@
 				7FD79343197B386E0038C709 /* Simplex.swift in Sources */,
 				7FD7932C197B24E00038C709 /* ScalarArithmetic.swift in Sources */,
 				7FD79328197B24E00038C709 /* oneD-initing.swift in Sources */,
+				7FD79345197B3DED0038C709 /* swixExtension.swift in Sources */,
 				7FD79331197B24E00038C709 /* twoD-simple-math.swift in Sources */,
 				7FD7933B197B2F290038C709 /* Problem.swift in Sources */,
 				7FD7931F197B24E00038C709 /* math.swift in Sources */,
