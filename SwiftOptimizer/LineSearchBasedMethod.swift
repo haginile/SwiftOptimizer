@@ -92,7 +92,7 @@ class LineSearchBasedMethod : OptimizationMethod {
                 // Now compute accuracy and check end criteria
                 // Numerical Recipes exit strategy on fx (see NR in C++, p.423)
                 fnew = problem.functionValue
-                fdiff = 2.0 * abs(fnew-fold) / (abs(fnew) + abs(fold) + 1e-20)
+                fdiff = 2.0 * abs(fnew-fold) / (abs(fnew) + abs(fold) + 1e-100)
                 if (fdiff < ftol ||
                     endCriteria.checkMaxIterations(iterationNumber_, endCriteriaType: &ecType)) {
                         endCriteria.checkStationaryFunctionValue(0.0, fxNew: 0.0,

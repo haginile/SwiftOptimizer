@@ -38,7 +38,7 @@ class CostFunction {
         for i in 0..<(parameters.count) {
             xx[i] += eps
             fp = value(xx)
-            xx[i] -= eps
+            xx[i] -= 2.0 * eps
             fm = value(xx)
             grad[i] = 0.5 * (fp - fm) / eps
             xx[i] = parameters[i]

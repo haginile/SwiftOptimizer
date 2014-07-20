@@ -21,9 +21,11 @@ class BFGS : LineSearchBasedMethod {
     }
     
     override func getUpdatedDirection(inout problem: Problem, gold2: Double, gradient: matrix) -> matrix {
-        inverseHessian = zeros((problem.currentValue.count, problem.currentValue.count))
-        for i in 0..<(problem.currentValue.count) {
-            inverseHessian[i,i] = 1.0
+        if (inverseHessian.rows == 0) {
+            inverseHessian = zeros((problem.currentValue.count, problem.currentValue.count))
+            for i in 0..<(problem.currentValue.count) {
+                inverseHessian[i,i] = 1.0
+            }
         }
         
         var diffGradient : matrix
@@ -69,7 +71,7 @@ class BFGS : LineSearchBasedMethod {
         for i in 0..<problem.currentValue.count {
             direction[i] = 0.0
             for j in 0..<problem.currentValue.count {
-                direction[j] -= inverseHessian[i,j] * lineSearch.lastGradient()[j]
+                direction[i] -= inverseHessian[i,j] * lineSearch.lastGradient()[j]
             }
         }
         

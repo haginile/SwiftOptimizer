@@ -17,7 +17,7 @@ class ConjugateGradient : LineSearchBasedMethod {
     }
     
     override func getUpdatedDirection(inout problem: Problem, gold2: Double, gradient: matrix) -> matrix {
-        var dir = problem.squaredNorm / gold2 * lineSearch.searchDirection
+        var dir = (problem.squaredNorm / gold2) * lineSearch.searchDirection
         return lineSearch.lastGradient() * -1 + dir
     }
 }

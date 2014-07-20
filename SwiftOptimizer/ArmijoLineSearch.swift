@@ -38,7 +38,12 @@ class ArmijoLineSearch : LineSearch {
         qt = q0
         
         //@
-        qpt = qp0
+        if gradient.count == 0 {
+            qpt = qp0
+        } else {
+            qpt = gradient *! searchDirection * -1
+        }
+        
         
         gradient = zeros(problem.currentValue.count)
         xtd = problem.currentValue
