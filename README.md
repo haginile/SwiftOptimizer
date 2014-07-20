@@ -3,7 +3,7 @@ SwiftOptimizer
 
 SwiftOptimizer allows you to solve minimization/maximization problems in Apple's Swift programming language. It is ported from QuantLib and uses the awesome [`swix` library](http://swix.readthedocs.org/en/latest/index.html) for matrix calculations.
 
-It currently supports the `Simplex`, `BFGS`, and `ConjugateGradient` method, but will be expanded to include least squares, etc.
+It currently supports the `Simplex` and `BFGS` methods, but will be expanded to include least squares, etc.
 
 Example
 --------
