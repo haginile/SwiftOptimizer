@@ -1,4 +1,7 @@
 //
+//  This file is derived from QuantLib. The license of QuantLib is available online at <http://quantlib.org/license.shtml>.
+//
+//
 //  Method.swift
 //  SwiftOptimizer
 //
@@ -8,8 +11,6 @@
 
 import Foundation
 
-class OptimizationMethod {
-    func minimize(inout problem : Problem, endCriteria : EndCriteria) -> EndCriteriaType {
-        return EndCriteriaType.None
-    }
+protocol OptimizationMethod {
+    func minimize(inout problem : Problem, endCriteria : EndCriteria) -> EndCriteriaType
 }

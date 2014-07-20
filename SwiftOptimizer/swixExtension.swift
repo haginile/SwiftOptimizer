@@ -10,8 +10,8 @@ import Foundation
 
 @infix func *! (vector1 : matrix, vector2 : matrix) -> Double {
     
-    // convert to accelerate
-    
+    // I think swix will implement this, but doesn't seem to be working right no
+    // convert to accelerate?
     var res = 0.0
     for i in 0..<(vector1.count) {
         res += vector1[i] * vector2[i]

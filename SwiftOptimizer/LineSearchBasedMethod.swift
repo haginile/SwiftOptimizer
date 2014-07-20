@@ -1,4 +1,10 @@
 //
+//  This file is derived from QuantLib. The license of QuantLib is available online at <http://quantlib.org/license.shtml>.
+//
+//
+//  This file is derived from QuantLib. The license of QuantLib is available online at <http://quantlib.org/license.shtml>.
+//
+//
 //  LineSearchBasedMethod.swift
 //  SwiftOptimizer
 //
@@ -15,7 +21,7 @@ class LineSearchBasedMethod : OptimizationMethod {
         self.lineSearch = lineSearch
     }
     
-    override func minimize(inout problem: Problem, endCriteria: EndCriteria) -> EndCriteriaType {
+    func minimize(inout problem: Problem, endCriteria: EndCriteria) -> EndCriteriaType {
         // Initializations
         var ftol = endCriteria.functionEpsilon
         var maxStationaryStateIterations_ = endCriteria.maxStationaryStateIterations

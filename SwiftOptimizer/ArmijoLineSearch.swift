@@ -1,4 +1,7 @@
 //
+//  This file is derived from QuantLib. The license of QuantLib is available online at <http://quantlib.org/license.shtml>.
+//
+//
 //  ArmijoLineSearch.swift
 //  SwiftOptimizer
 //
@@ -10,13 +13,14 @@ import Foundation
 
 class ArmijoLineSearch : LineSearch {
     
-    var alpha : Double = 0.65
-    var beta : Double = 0.05
+    var alpha : Double
+    var beta : Double
 
     init(eps : Double = 1e-8, alpha : Double = 0.05, beta : Double = 0.65) {
-        super.init(eps : eps)
         self.alpha = alpha
         self.beta = beta
+        
+        super.init()
     }
     
     override func search(inout problem: Problem, inout endCriteriaType: EndCriteriaType, endCriteria: EndCriteria, initialValue: Double) -> Double {

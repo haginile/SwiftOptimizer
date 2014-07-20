@@ -1,4 +1,7 @@
 //
+//  This file is derived from QuantLib. The license of QuantLib is available online at <http://quantlib.org/license.shtml>.
+//
+//
 //  LineSearch.swift
 //  SwiftOptimizer
 //
@@ -16,7 +19,7 @@ class LineSearch {
     var qpt = 0.0
     var succeed = true
     
-    init(eps : Double) {
+    init() {
         searchDirection = zeros(0)
         xtd = zeros(0)
         gradient = zeros(0)

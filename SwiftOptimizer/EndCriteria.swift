@@ -1,4 +1,7 @@
 //
+//  This file is derived from QuantLib. The license of QuantLib is available online at <http://quantlib.org/license.shtml>.
+//
+//
 //  EndCriteria.swift
 //  SwiftOptimizer
 //
@@ -98,10 +101,10 @@ class EndCriteria {
     
     func check(iteration : Int, inout stationaryStateIterations : Int, positiveOptimization : Bool, fold : Double, normgold : Double, fnew : Double, normgnew : Double, inout endCriteriaType : EndCriteriaType) -> Bool {
         
-    return (checkMaxIterations(iteration, endCriteriaType: &endCriteriaType) ||
-            checkStationaryFunctionValue(fold, fxNew: fnew, stationaryStateIterations: &stationaryStateIterations, endCriteriaType: &endCriteriaType) ||
-            checkStationaryFunctionAccuracy(fnew, positiveOptimization: positiveOptimization, endCriteriaType: &endCriteriaType) ||
-            checkZeroGradientNorm(normgnew, endCriteriaType: &endCriteriaType))
+        return (checkMaxIterations(iteration, endCriteriaType: &endCriteriaType) ||
+                checkStationaryFunctionValue(fold, fxNew: fnew, stationaryStateIterations: &stationaryStateIterations, endCriteriaType: &endCriteriaType) ||
+                checkStationaryFunctionAccuracy(fnew, positiveOptimization: positiveOptimization, endCriteriaType: &endCriteriaType) ||
+                checkZeroGradientNorm(normgnew, endCriteriaType: &endCriteriaType))
     }
 
     

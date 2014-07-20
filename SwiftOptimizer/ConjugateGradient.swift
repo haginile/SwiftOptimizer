@@ -1,4 +1,7 @@
 //
+//  This file is derived from QuantLib. The license of QuantLib is available online at <http://quantlib.org/license.shtml>.
+//
+//
 //  ConjugateGradient.swift
 //  SwiftOptimizer
 //

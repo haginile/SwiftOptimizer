@@ -1,4 +1,7 @@
 //
+//  This file is derived from QuantLib. The license of QuantLib is available online at <http://quantlib.org/license.shtml>.
+//
+//
 //  BFGS.swift
 //  SwiftOptimizer
 //
@@ -10,9 +13,10 @@ import Foundation
 
 class BFGS : LineSearchBasedMethod {
     
-    var inverseHessian : matrix2d = zeros((0,0))
+    var inverseHessian : matrix2d
     
     init(lineSearch: LineSearch = ArmijoLineSearch()) {
+        inverseHessian = zeros((0,0))
         super.init(lineSearch : lineSearch)
     }
     

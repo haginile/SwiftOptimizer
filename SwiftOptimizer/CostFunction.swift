@@ -1,4 +1,7 @@
 //
+//  This file is derived from QuantLib. The license of QuantLib is available online at <http://quantlib.org/license.shtml>.
+//
+//
 //  CostFunction.swift
 //  SwiftOptimizer
 //
@@ -8,20 +11,23 @@
 
 import Foundation
 
+/**
+*  Base class for the cost function (i.e., objective function)
+*/
 class CostFunction {
     
     func finiteDifferenceEpsilon() -> Double {
-        return 1e-8
+        return 1.0e-8
     }
     
     // must subclass
     func value(parameters : matrix) -> Double {
-        return 0
+        return 1.0e8
     }
     
     // must subclass
     func values(parameters : matrix) -> matrix {
-        return zeros(parameters.count)
+        return zeros(parameters.count) + 1.0e8
     }
     
     func gradient(inout grad : matrix, parameters : matrix) {

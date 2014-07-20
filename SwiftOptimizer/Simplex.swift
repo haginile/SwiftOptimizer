@@ -1,4 +1,7 @@
 //
+//  This file is derived from QuantLib. The license of QuantLib is available online at <http://quantlib.org/license.shtml>.
+//
+//
 //  Simplex.swift
 //  SwiftOptimizer
 //
@@ -49,7 +52,7 @@ class Simplex : OptimizationMethod {
     }
     
     
-    override func minimize(inout problem: Problem, endCriteria: EndCriteria) -> EndCriteriaType {
+    func minimize(inout problem: Problem, endCriteria: EndCriteria) -> EndCriteriaType {
         var xtol = endCriteria.rootEpsilon
         var maxStationaryStateIterations = endCriteria.maxStationaryStateIterations
         var ecType = EndCriteriaType.None
