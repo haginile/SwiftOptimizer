@@ -11,11 +11,7 @@ import Foundation
 class RosenBrockFunction: CostFunction
 {
     override func value(parameters: matrix) -> Double {
-        var res = (1.0 - parameters[0]) * (1.0 - parameters[0])
-        var a = parameters[1] - parameters[0] * parameters[0]
-        var b = parameters[1] - parameters[0] * parameters[0]
-        res = res + 100.0 * a * b
-        return res
+        return pow(1.0 - parameters[0], 2) + 100 * pow(parameters[1] - pow(parameters[0], 2), 2.0)
     }
 
     override func values(parameters: matrix) -> matrix {
@@ -40,4 +36,10 @@ println(problem.currentValue)
 problem.reset()
 var bfgsSolver = BFGS()
 var bfgsSolved = bfgsSolver.minimize(&problem, endCriteria: myEndCriteria)
+println(problem.currentValue)
+
+
+problem.reset()
+var conjSolver = ConjugateGradient()
+var conjSolved = conjSolver.minimize(&problem, endCriteria: myEndCriteria)
 println(problem.currentValue)

@@ -1,22 +1,19 @@
 SwiftOptimizer
 =========
 
-SwiftOptimizer allows you to solve minimization/maximization problems in Apple's Swift programming language. It is ported from QuantLib and uses the awesome [`swix` library](http://swix.readthedocs.org/en/latest/index.html).
+SwiftOptimizer allows you to solve minimization/maximization problems in Apple's Swift programming language. It is ported from QuantLib and uses the awesome [`swix` library](http://swix.readthedocs.org/en/latest/index.html) for matrix calculations.
 
-I've only implemented the Simplex and the BFGS methods, but will expand the algorithms to include least squares, etc. in the next few days.
+It currently supports the `Simplex`, `BFGS`, and `ConjugateGradient` method, but will be expanded to include least squares, etc.
 
-Here's an example illustrating how to use this library.
+Example
+--------
 
-First things first, you need to subclass `CostFunction` to create a class presentatin the function you are trying to minimize:
+First things first, subclass `CostFunction` to create a class representing the function you are trying to minimize. For example, if you are interested in minimizing the [Rosenbrock Function](http://mathworld.wolfram.com/RosenbrockFunction.html), then you need to set up the cost function as follows:
 
     class RosenBrockFunction: CostFunction
     {
         override func value(parameters: matrix) -> Double {
-            var res = (1.0 - parameters[0]) * (1.0 - parameters[0])
-            var a = parameters[1] - parameters[0] * parameters[0]
-            var b = parameters[1] - parameters[0] * parameters[0]
-            res = res + 100.0 * a * b
-            return res
+            return pow(1.0 - parameters[0], 2) + 100 * pow(parameters[1] - pow(parameters[0], 2), 2.0)
         }
 
         override func values(parameters: matrix) -> matrix {
@@ -26,7 +23,12 @@ First things first, you need to subclass `CostFunction` to create a class presen
         }
     }
 
-The cost function, constraint (if any), and the initial values together define the problem you are trying to solve. You also need to specify the `endCriteria` so that the optimizer knows when to quit:
+The `CostFunction`, `Constraint` (if any), and the initial values together define the `Problem` you are trying to solve. You also need to specify the `EndCriteria` so that the optimizer knows when to quit:    
+
+    var costFunction = RosenBrockFunction()
+    var constraint = NoConstraint()
+    var initialValue = zeros(2)
+    var problem = Problem(costFunction: costFunction, constraint: constraint, initialValue: initialValue)
 
     var myEndCriteria = EndCriteria(maxIterations: 1000, 
                                     maxStationaryStateIterations: 100, 
@@ -34,13 +36,17 @@ The cost function, constraint (if any), and the initial values together define t
                                     functionEpsilon: 1.0e-9, 
                                     gradientNormEpsilon: 1.0e-5)
 
-    var costFunction = RosenBrockFunction()
-    var constraint = NoConstraint()
-    var initialValue = zeros(2)
-    var problem = Problem(costFunction: costFunction, constraint: constraint, initialValue: initialValue)
 
 Finally, this is how you run the `Simplex` optimizer:
 
     var solver = Simplex(lambda: 0.1)
-    var solved = solver.minimize(problem, endCriteria: myEndCriteria)
-    problem.currentValue    // return [1.0, 1.0]
+    var solved = solver.minimize(&problem, endCriteria: myEndCriteria)
+    problem.currentValue    // return matrix([1.000, 1.000])
+
+
+Other optimization algorithms can be applied analogously. For example, this is how to use the `BFGS` algorithm:
+
+    var bfgsSolver = BFGS()
+    var bfgsSolved = bfgsSolver.minimize(&problem, endCriteria: myEndCriteria)
+    problem.currentValue    // return matrix([1.000, 1.000])
+
