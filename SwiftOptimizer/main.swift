@@ -25,13 +25,13 @@ class RosenBrockFunction: CostFunction
     }
 }
 
-var myEndCrit = EndCriteria(maxIterations: 1000, maxStationaryStateIterations: 100, rootEpsilon: 1.0e-8, functionEpsilon: 1.0e-9, gradientNormEpsilon: 1.0e-5)
+var myEndCriteria = EndCriteria(maxIterations: 1000, maxStationaryStateIterations: 100, rootEpsilon: 1.0e-8, functionEpsilon: 1.0e-9, gradientNormEpsilon: 1.0e-5)
 var myFunc = RosenBrockFunction()
 var constraint = NoConstraint()
-var initial = zeros(2)
-var problem = Problem(costFunction: myFunc, constraint: constraint, initialValue: initial)
+var initialValue = zeros(2)
+var problem = Problem(costFunction: myFunc, constraint: constraint, initialValue: initialValue)
 
 var solver = Simplex(lambda: 0.1)
-var solved = solver.minimize(problem, endCriteria: myEndCrit)
+var solved = solver.minimize(problem, endCriteria: myEndCriteria)
 
 println(problem.currentValue)
