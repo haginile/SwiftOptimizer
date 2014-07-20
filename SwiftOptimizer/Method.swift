@@ -9,7 +9,7 @@
 import Foundation
 
 class OptimizationMethod {
-    func minimize(problem : Problem, endCriteria : EndCriteria) -> EndCriteriaType {
+    func minimize(inout problem : Problem, endCriteria : EndCriteria) -> EndCriteriaType {
         return EndCriteriaType.None
     }
 }

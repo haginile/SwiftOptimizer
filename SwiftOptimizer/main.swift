@@ -32,6 +32,6 @@ var initialValue = zeros(2)
 var problem = Problem(costFunction: myFunc, constraint: constraint, initialValue: initialValue)
 
 var solver = Simplex(lambda: 0.1)
-var solved = solver.minimize(problem, endCriteria: myEndCriteria)
+var solved = solver.minimize(&problem, endCriteria: myEndCriteria)
 
 println(problem.currentValue)

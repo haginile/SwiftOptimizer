@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7F201F2D197B579100C2C584 /* LineSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F201F2C197B579100C2C584 /* LineSearch.swift */; };
+		7F201F2F197B59B900C2C584 /* ArmijoLineSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F201F2E197B59B900C2C584 /* ArmijoLineSearch.swift */; };
+		7F201F31197B5D4100C2C584 /* LineSearchBasedMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F201F30197B5D4100C2C584 /* LineSearchBasedMethod.swift */; };
 		7FD792FA197B24BB0038C709 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD792F9197B24BB0038C709 /* main.swift */; };
 		7FD7931E197B24E00038C709 /* machine_learning.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD79302197B24E00038C709 /* machine_learning.swift */; };
 		7FD7931F197B24E00038C709 /* math.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FD79303197B24E00038C709 /* math.swift */; };
@@ -51,6 +54,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		7F201F2C197B579100C2C584 /* LineSearch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LineSearch.swift; sourceTree = "<group>"; };
+		7F201F2E197B59B900C2C584 /* ArmijoLineSearch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArmijoLineSearch.swift; sourceTree = "<group>"; };
+		7F201F30197B5D4100C2C584 /* LineSearchBasedMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LineSearchBasedMethod.swift; sourceTree = "<group>"; };
 		7FD792F6197B24BB0038C709 /* SwiftOptimizer */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SwiftOptimizer; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FD792F9197B24BB0038C709 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		7FD79302197B24E00038C709 /* machine_learning.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = machine_learning.swift; sourceTree = "<group>"; };
@@ -127,6 +133,9 @@
 				7FD7933C197B32CE0038C709 /* EndCriteria.swift */,
 				7FD7933E197B37AB0038C709 /* Method.swift */,
 				7FD79340197B38380038C709 /* LeastSquare.swift */,
+				7F201F2C197B579100C2C584 /* LineSearch.swift */,
+				7F201F2E197B59B900C2C584 /* ArmijoLineSearch.swift */,
+				7F201F30197B5D4100C2C584 /* LineSearchBasedMethod.swift */,
 				7FD79342197B386E0038C709 /* Simplex.swift */,
 				7FD79344197B3DED0038C709 /* swixExtension.swift */,
 			);
@@ -283,6 +292,7 @@
 				7FD7932F197B24E00038C709 /* twoD-initing.swift in Sources */,
 				7FD792FA197B24BB0038C709 /* main.swift in Sources */,
 				7FD7933F197B37AB0038C709 /* Method.swift in Sources */,
+				7F201F2D197B579100C2C584 /* LineSearch.swift in Sources */,
 				7FD79330197B24E00038C709 /* twoD-operators.swift in Sources */,
 				7FD79339197B281B0038C709 /* Constraint.swift in Sources */,
 				7FD79341197B38380038C709 /* LeastSquare.swift in Sources */,
@@ -293,11 +303,13 @@
 				7FD79331197B24E00038C709 /* twoD-simple-math.swift in Sources */,
 				7FD7933B197B2F290038C709 /* Problem.swift in Sources */,
 				7FD7931F197B24E00038C709 /* math.swift in Sources */,
+				7F201F31197B5D4100C2C584 /* LineSearchBasedMethod.swift in Sources */,
 				7FD7933D197B32CE0038C709 /* EndCriteria.swift in Sources */,
 				7FD79324197B24E00038C709 /* opencv.mm in Sources */,
 				7FD7932A197B24E00038C709 /* oneD-simple-math.swift in Sources */,
 				7FD7931E197B24E00038C709 /* machine_learning.swift in Sources */,
 				7FD7932E197B24E00038C709 /* twoD-complex-math.swift in Sources */,
+				7F201F2F197B59B900C2C584 /* ArmijoLineSearch.swift in Sources */,
 				7FD79323197B24E00038C709 /* math.m in Sources */,
 				7FD79326197B24E00038C709 /* operations-and-indexing.m in Sources */,
 				7FD79322197B24E00038C709 /* machine_learning.mm in Sources */,

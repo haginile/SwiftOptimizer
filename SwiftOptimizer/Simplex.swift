@@ -49,7 +49,7 @@ class Simplex : OptimizationMethod {
     }
     
     
-    override func minimize(problem: Problem, endCriteria: EndCriteria) -> EndCriteriaType {
+    override func minimize(inout problem: Problem, endCriteria: EndCriteria) -> EndCriteriaType {
         var xtol = endCriteria.rootEpsilon
         var maxStationaryStateIterations = endCriteria.maxStationaryStateIterations
         var ecType = EndCriteriaType.None
