@@ -24,9 +24,7 @@ class RosenBrockFunction: CostFunction
 var myEndCriteria = EndCriteria(maxIterations: 1000, maxStationaryStateIterations: 100, rootEpsilon: 1.0e-8, functionEpsilon: 1.0e-9, gradientNormEpsilon: 1.0e-5)
 var myFunc = RosenBrockFunction()
 var constraint = NoConstraint()
-var initialValue = zeros(2)
-initialValue[0] = 2.0
-initialValue[1] = 0.1
+var initialValue = zeros(2) + 100
 
 var problem = Problem(costFunction: myFunc, constraint: constraint, initialValue: initialValue)
 
