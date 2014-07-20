@@ -44,7 +44,7 @@ class ArmijoLineSearch : LineSearch {
         }
         
         
-        gradient = zeros(problem.currentValue.count)
+        gradient = matrix(n : problem.currentValue.count)
         xtd = problem.currentValue
         t = update(&xtd, direction: searchDirection, beta: t, constraint: constraint)
         qt = problem.value(xtd)

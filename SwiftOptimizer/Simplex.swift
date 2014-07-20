@@ -21,8 +21,8 @@ class Simplex : OptimizationMethod {
     init(lambda : Double) {
         self.lambda = lambda
         self.vertices = [matrix]()
-        self.values = zeros(0)
-        self.sum_ = zeros(0)
+        self.values = matrix(n : 0)
+        self.sum_ = matrix(n : 0)
     }
     
     func extrapolate(problem : Problem, iHighest : Int, inout factor : Double) -> Double {

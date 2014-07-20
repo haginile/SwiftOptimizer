@@ -27,7 +27,7 @@ class CostFunction {
     
     // must subclass
     func values(parameters : matrix) -> matrix {
-        return zeros(parameters.count) + 1.0e8
+        return matrix(n: 0)
     }
     
     func gradient(inout grad : matrix, parameters : matrix) {

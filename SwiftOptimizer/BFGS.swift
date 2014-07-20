@@ -16,7 +16,7 @@ class BFGS : LineSearchBasedMethod {
     var inverseHessian : matrix2d
     
     init(lineSearch: LineSearch = ArmijoLineSearch()) {
-        inverseHessian = zeros((0,0))
+        inverseHessian = matrix2d(columns: 0, rows: 0)
         super.init(lineSearch : lineSearch)
     }
     
@@ -67,7 +67,7 @@ class BFGS : LineSearchBasedMethod {
             }
         }
         
-        var direction = zeros(problem.currentValue.count)
+        var direction = matrix(n : problem.currentValue.count)
         for i in 0..<problem.currentValue.count {
             direction[i] = 0.0
             for j in 0..<problem.currentValue.count {

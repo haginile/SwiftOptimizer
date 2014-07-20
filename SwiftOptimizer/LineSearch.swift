@@ -20,9 +20,9 @@ class LineSearch {
     var succeed = true
     
     init() {
-        searchDirection = zeros(0)
-        xtd = zeros(0)
-        gradient = zeros(0)
+        searchDirection = matrix(n : 0)
+        xtd = matrix(n : 0)
+        gradient = matrix(n : 0)
     }
     
     func lastX() -> matrix {

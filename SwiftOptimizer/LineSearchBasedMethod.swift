@@ -113,6 +113,6 @@ class LineSearchBasedMethod : OptimizationMethod {
     }
     
     func getUpdatedDirection(inout problem : Problem, gold2 : Double, gradient : matrix) -> matrix {
-        return zeros(0)
+        return matrix(n : 0)
     }
 }
